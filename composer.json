@@ -1,40 +1,54 @@
 {
-    "name": "orchestra/testing",
-    "description": "Orchestra Platform Testing Helper",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Mior Muhammad Zaki",
-            "email": "crynobone@gmail.com",
-            "homepage": "https://github.com/crynobone"
-        }
-    ],
-    "autoload": {
-        "psr-4": {
-            "Orchestra\\Testing\\": "src/"
-        }
+  "name": "orchestra/testing",
+  "description": "Orchestra Platform Testing Helper",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Mior Muhammad Zaki",
+      "email": "crynobone@gmail.com",
+      "homepage": "https://github.com/crynobone"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Orchestra\\Testing\\": "src/"
+    }
+  },
+  "require": {
+    "php": "^8.0",
+    "doctrine/dbal": "^3.3",
+    "orchestra/avatar": "7.x-dev",
+    "orchestra/contracts": "^7.0",
+    "orchestra/testbench": "^7.0",
+    "orchestra/testbench-browser-kit": "^7.0"
+  },
+  "require-dev": {
+    "orchestra/canvas": "^7.0",
+    "orchestra/foundation": "7.x-dev",
+    "orchestra/installer": "7.x-dev",
+    "orchestra/platform": "dev-master"
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/katsana-external/avatar"
     },
-    "require": {
-        "php": "^7.3 || ^8.0",
-        "doctrine/dbal": "^2.9 || ^3.0",
-        "orchestra/avatar": "^6.0",
-        "orchestra/contracts": "^6.0",
-        "orchestra/testbench": "^6.18",
-        "orchestra/testbench-browser-kit": "^6.13"
+    {
+      "type": "vcs",
+      "url": "https://github.com/katsana-external/foundation"
     },
-    "require-dev": {
-        "orchestra/canvas": "^6.0",
-        "orchestra/foundation": "^6.0",
-        "orchestra/installer": "^6.0",
-        "orchestra/platform": "dev-master"
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "6.0-dev"
-        }
-    },
-    "config": {
-        "sort-packages": true
-    },
-    "minimum-stability": "dev"
+    {
+      "type": "vcs",
+      "url": "https://github.com/katsana-external/installer"
+    }
+  ],
+  "extra": {
+    "branch-alias": {
+      "dev-master": "7.0-dev"
+    }
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "minimum-stability": "dev"
 }
