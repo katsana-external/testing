@@ -26,25 +26,126 @@
     "orchestra/canvas": "^7.0",
     "orchestra/foundation": "7.x-dev",
     "orchestra/installer": "7.x-dev",
-    "orchestra/platform": "dev-master"
+    "orchestra/platform": "7.x-dev"
   },
   "repositories": [
-    {
-      "type": "vcs",
-      "url": "https://github.com/katsana-external/avatar"
-    },
     {
       "type": "vcs",
       "url": "https://github.com/katsana-external/foundation"
     },
     {
       "type": "vcs",
+      "url": "https://github.com/katsana-external/support"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/katsana-external/notifier"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/katsana-external/kernel"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/katsana-external/auth"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/katsana-external/avatar"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/katsana-external/control"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/katsana-external/facile"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/katsana-external/contracts"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/katsana-external/asset"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/katsana-external/imagine"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/katsana-external/testing"
+    },
+    {
+      "type": "vcs",
       "url": "https://github.com/katsana-external/installer"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/katsana-external/extension"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/katsana-external/html"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/katsana-external/model"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/katsana-external/lumen"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/katsana-external/translation"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/katsana-external/widget"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/katsana-external/tenanti"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/katsana-external/profiler"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/katsana-external/geocoder"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/katsana-external/memory"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/katsana-external/blueprint"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/katsana-external/dhosa"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/katsana-external/cabinet"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/katsana-external/platform"
     }
   ],
   "extra": {
     "branch-alias": {
       "dev-master": "7.0-dev"
+    },
+    "laravel": {
+      "providers": [
+        "Orchestra\\Foundation\\Providers\\FoundationServiceProvider"
+      ]
     }
   },
   "config": {

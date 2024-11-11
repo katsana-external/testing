@@ -2,9 +2,10 @@
 
 namespace Orchestra\Testing\Http;
 
+use Illuminate\Foundation\Http\Kernel as HttpKernel;
 use Orchestra\Testbench\Http\Kernel as BaseKernel;
 
-class Kernel extends BaseKernel
+class Kernel extends HttpKernel
 {
     /**
      * The application's middleware stack.

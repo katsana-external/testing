@@ -22,6 +22,9 @@ abstract class TestCase extends Testbench
      */
     protected function getPackageBootstrappers($app)
     {
+        // Ensure config is loaded first
+        $app['config']->set('orchestra/foundation', require __DIR__.'/../vendor/orchestra/foundation/config/config.php');
+
         return [
             'Orchestra\Foundation\Bootstrap\LoadFoundation',
             'Orchestra\Foundation\Bootstrap\UserAccessPolicy',
@@ -40,6 +43,9 @@ abstract class TestCase extends Testbench
      */
     protected function getApplicationAliases($app)
     {
+        // Load foundation config before aliases
+        $app['config']->set('orchestra/foundation', require __DIR__.'/../vendor/orchestra/foundation/config/config.php');
+        
         return $app['config']['app.aliases'];
     }
 
@@ -88,7 +94,7 @@ abstract class TestCase extends Testbench
      */
     protected function resolveApplicationHttpKernel($app)
     {
-        $app->singleton('Illuminate\Contracts\Http\Kernel', 'Orchestra\Testing\Http\Kernel');
+        $app->singleton('Illuminate\Contracts\Http\Kernel', 'Orchestra\Testbench\Http\Kernel');
     }
 
     /**

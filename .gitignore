@@ -4,3 +4,4 @@ vendor/*
 
 # Fixtures
 fixture/resources/config/local/*
+.phpunit.result.cache
